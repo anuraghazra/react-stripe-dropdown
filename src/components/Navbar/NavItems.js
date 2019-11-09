@@ -28,12 +28,23 @@ const ItemTitle = styled.span`
 `
 
 
-const Item = ({ title, children, handleMouseEnter, handleIndexLeave, direction, isVisible }) => {
+const Item = ({
+  title,
+  children,
+  handleMouseEnter,
+  handleIndexLeave,
+  direction
+}) => {
   let animationDirection = direction * 50;
 
   return (
     <MenuItemWrapper>
-      <ItemTitle onMouseLeave={handleIndexLeave} onMouseEnter={handleMouseEnter}>{title}</ItemTitle>
+      <ItemTitle
+        onMouseLeave={handleIndexLeave}
+        onMouseEnter={handleMouseEnter}
+      >
+        {title}
+      </ItemTitle>
 
       {/* AnimatePresence needed for exit */}
       <AnimatePresence>
@@ -42,7 +53,9 @@ const Item = ({ title, children, handleMouseEnter, handleIndexLeave, direction, 
             animate={{ opacity: 1, x: 0, }}
             initial={{ opacity: 1, x: animationDirection, }}
             exit={{ opacity: 0 }}
-            transition={{ ease: "easeOut", duration: .2 }}
+            transition={{
+              duration: .2
+            }}
           >
             <Container>
               <div className="overflow__content">

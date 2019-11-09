@@ -2,13 +2,6 @@ import styled from 'styled-components';
 
 const Container = styled.section`
   font-size: 14px;
-  /* overflow: hidden !important; */
-
-
-  /* opacity: 0;
-  pointer-events: none;
-  transition: 0.3s;
-  transform: translate(-50%,0) rotate3d(1, 0, 0, -25deg); */
   transform: translate(-50%,0);
 
   position: absolute;

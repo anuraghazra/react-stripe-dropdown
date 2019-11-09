@@ -11,6 +11,9 @@ export default createGlobalStyle`
     font-family: karla, -apple-system, system-ui, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     color: whtie;
+
+    height: 100vh;
+    background: linear-gradient(45deg, #0ec3ff, #5533ff);
   }
 
   h1,h2,h3,h4,h5,h6 {

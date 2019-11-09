@@ -5,7 +5,6 @@ import Menu from './NavItems'
 import ProductsComponent from '../DropDown/ProductsComponent';
 import DevelopersComponent from '../DropDown/DevelopersComponent';
 import CompanyComponent from '../DropDown/CompanyComponent';
-import { motion } from 'framer-motion';
 
 const navConfig = [
   { title: 'Products', component: <ProductsComponent /> },
@@ -17,7 +16,7 @@ const NavWrapper = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(45deg, #5533ff, #0ec3ff);
+  /* background: linear-gradient(45deg, #5533ff, #0ec3ff); */
   width: 100%;
   position: absolute;
   left: 0;
