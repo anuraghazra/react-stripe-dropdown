@@ -2,6 +2,7 @@
   "name": "stripe-dropdown-menu",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://anuraghazra.github.io/react-stripe-dropdown",
   "dependencies": {
     "framer-motion": "^1.6.15",
     "normalize.css": "^8.0.1",
