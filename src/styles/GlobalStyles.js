@@ -18,6 +18,10 @@ export default createGlobalStyle`
     line-height: 150%;
   }
 
+  .overflow__content {
+    padding: 10px 30px;
+    overflow: hidden !important;
+  }
   .text-14 {
     font-size: 14px;
   }

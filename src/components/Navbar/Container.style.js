@@ -2,23 +2,24 @@ import styled from 'styled-components';
 
 const Container = styled.section`
   font-size: 14px;
+  /* overflow: hidden !important; */
 
-  opacity: 0;
+
+  /* opacity: 0;
   pointer-events: none;
   transition: 0.3s;
+  transform: translate(-50%,0) rotate3d(1, 0, 0, -25deg); */
+  transform: translate(-50%,0);
 
   position: absolute;
   left: 50%;
   margin-top: 15px;
 
-  transform: translate(-50%,0) rotate3d(1, 0, 0, -25deg);
   background-color: rgba(255,255,255);
   border-radius: 5px;
   min-width: 400px;
   min-height: 300px;
   box-shadow: 0 5px 20px 5px rgba(0,0,0,0.1);
-  color: black;
-  padding: 10px 30px;
 
   /* arrow */
   &:after {

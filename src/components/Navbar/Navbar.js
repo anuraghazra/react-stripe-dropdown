@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import Menu from './NavItems'
 import ProductsComponent from '../DropDown/ProductsComponent';
 import DevelopersComponent from '../DropDown/DevelopersComponent';
 import CompanyComponent from '../DropDown/CompanyComponent';
+import { motion } from 'framer-motion';
 
 const navConfig = [
   { title: 'Products', component: <ProductsComponent /> },
@@ -36,18 +37,37 @@ const NavWrapper = styled.nav`
 
 
 const Navbar = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [previousIndex, setPreviousIndex] = useState(null);
+
+  function handleActiveIndex(index) {
+    setActiveIndex(index);
+  }
+
+  function handleMouseLeave() {
+    setActiveIndex(null)
+  }
+
+  function handleIndexLeave() {
+    setPreviousIndex(activeIndex);
+  }
+
   return (
     <NavWrapper>
-      <h2 className="logo">Logo</h2>
+      <h2 className="logo">Ahazra</h2>
 
-      <Menu>
+      <Menu onMouseLeave={handleMouseLeave}>
         {navConfig.map((item, index) => {
           return (
             <Menu.Item
+              handleIndexLeave={handleIndexLeave}
+              handleMouseEnter={() => handleActiveIndex(index)}
+              direction={previousIndex - (activeIndex || 0)}
               key={index}
+              isVisible={(index === activeIndex)}
               title={item.title}
             >
-              {item.component}
+              {(index === activeIndex) && item.component}
             </Menu.Item>
           )
         })}
