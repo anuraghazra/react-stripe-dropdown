@@ -17,6 +17,10 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Navbar />
+
+        <span className="credits">
+          <a href="https://github.com/anuraghazra/react-stripe-dropdown">react-stripe-dropdown</a> | Made With React + FramerMotion;
+        </span>
       </ThemeProvider>
     </div>
   );

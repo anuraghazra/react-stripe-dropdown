@@ -26,7 +26,13 @@ const NavWrapper = styled.nav`
   padding: 0 250px;
 
   .logo {
-    flex: 1;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: auto;
   }
 
   @media all and (max-width: 1200px) {
@@ -53,7 +59,7 @@ const Navbar = () => {
 
   return (
     <NavWrapper>
-      <h2 className="logo">Ahazra</h2>
+      <h3 className="logo"><a target="__blank" href="https://anuraghazra.github.io/">AH</a></h3>
 
       <Menu onMouseLeave={handleMouseLeave}>
         {navConfig.map((item, index) => {

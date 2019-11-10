@@ -45,7 +45,7 @@ function CompanyComponent() {
           ].map((link, index) => {
             return (
               <motion.div key={index} className="item" variants={item}>
-                <IconLink href="#">{link}</IconLink>
+                <IconLink href="https://github.com/anuraghazra/react-stripe-dropdown">{link}</IconLink>
               </motion.div>
             )
           })

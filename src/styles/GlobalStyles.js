@@ -21,6 +21,32 @@ export default createGlobalStyle`
     line-height: 150%;
   }
 
+  a {
+    text-decoration: none;
+    color: #0ec3ff;
+    
+    &:hover {
+      color: #3670ff;
+    }
+  }
+
+  .credits {
+    position: absolute;
+    bottom: 20px;
+    color: #c5f0ff;
+    left: 50%;
+    transform: translateX(-50%);
+
+    
+    a {
+      color: #06070f;
+      
+      &:hover {
+        color: #c5f0ff;
+      }
+    }
+  }
+
   .overflow__content {
     padding: 10px 30px;
     overflow: hidden !important;

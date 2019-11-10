@@ -34,7 +34,7 @@ function DevelopersComponent() {
   return (
     <DevelopersDDContent>
       <div>
-        <IconLink href="#" className="developers__title">Documentation</IconLink>
+        <IconLink href="https://github.com/anuraghazra/react-stripe-dropdown" className="developers__title">Documentation</IconLink>
         <span style={{ marginLeft: 30 }}>Start integrating the APIs right away</span>
       </div>
 
