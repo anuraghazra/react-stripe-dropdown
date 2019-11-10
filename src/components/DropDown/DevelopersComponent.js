@@ -19,7 +19,7 @@ const DevelopersDDContent = styled(DropdownContent)`
     grid-template-rows: 1fr;
     margin-left: 30px;
     h4 {
-      color: #8898aa;
+      color: ${p => p.theme.lightGray};
     }
   }
 

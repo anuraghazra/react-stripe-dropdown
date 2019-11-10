@@ -63,7 +63,6 @@ const Navbar = () => {
               handleMouseEnter={() => handleActiveIndex(index)}
               direction={previousIndex - (activeIndex || 0)}
               key={index}
-              isVisible={(index === activeIndex)}
               title={item.title}
             >
               {(index === activeIndex) && item.component}

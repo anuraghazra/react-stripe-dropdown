@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 const DropdownContent = styled.div`
-  color: #6d7580;
-
   .company__blog--links {
     a {
       text-overflow: ellipsis;
@@ -32,7 +30,7 @@ export const IconLink = styled.a`
     display: inline-block;
     width: 15px;
     height: 15px;
-    background-color: #424770;
+    background-color: ${p => p.theme.primaryBlack};
   }
 `
 

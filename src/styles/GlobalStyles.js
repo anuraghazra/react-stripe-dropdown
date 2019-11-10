@@ -13,7 +13,7 @@ export default createGlobalStyle`
     color: whtie;
 
     height: 100vh;
-    background: linear-gradient(45deg, #0ec3ff, #5533ff);
+    background: ${p => p.theme.gradient};
   }
 
   h1,h2,h3,h4,h5,h6 {

@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 const Container = styled.section`
+  color: ${p => p.theme.gray};
+  /* color: #6d7580; */
+
   font-size: 14px;
   transform: translate(-50%,0);
 
@@ -39,27 +42,27 @@ const Container = styled.section`
       display: inline-block;
       width: 15px;
       height: 15px;
-      background-color: #424770;
+      background-color: ${p => p.theme.primaryBlack};
     }
   }
   
   a {
     text-decoration: none;
     display: block;
-    color: #424770;
+    color: ${p => p.theme.primaryBlack};
     text-transform: uppercase;
     
     &:hover {
-      color: #696e98;
+      color: ${p => p.theme.gray};
     }
     &:hover:before {
-      background-color: #696e98;
+      background-color: ${p => p.theme.gray};
     }
     margin: 20px 0;
   }
 
-  h1,h2,h3,h4,h5 {
-    color: #424770;
+  h1, h2, h3, h4, h5 {
+    color: ${p => p.theme.primaryBlack};
     text-transform: uppercase;
   }
 `;

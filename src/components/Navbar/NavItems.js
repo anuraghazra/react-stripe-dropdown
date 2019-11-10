@@ -15,12 +15,6 @@ export const Menu = styled.ul`
 export const MenuItemWrapper = styled.li`
   padding: 20px 0;
   position: relative;
-
-  /* &:hover > section {
-    opacity: 1;
-    pointer-events: all;
-    transform: translate(-50%,0) rotate3d(0, 0, 0, 0deg);
-  } */
 `
 
 const ItemTitle = styled.span`

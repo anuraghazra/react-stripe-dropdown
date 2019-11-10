@@ -37,7 +37,7 @@ const DescriptionLinkWrapper = styled.div`
 
   .title {
     text-transform: uppercase;
-    color: #32325d;
+    color: ${p => p.theme.primaryBlack};
   }
 `
 
