@@ -2,9 +2,19 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import GlobalStyles from './styles/GlobalStyles'
 
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider, DefaultTheme } from 'styled-components';
 
-const theme = {
+// and extend them!
+declare module 'styled-components' {
+  export interface DefaultTheme {
+    primaryBlack: string
+    lightGray: string
+    gray: string
+    gradient: string
+  }
+}
+
+const theme: DefaultTheme = {
   primaryBlack: '#424770',
   lightGray: '#8898aa',
   gray: '#696e98',

@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import DropdownContent from './DropdownContent';
 
 
-const DescriptionLinkWrapper = styled.div`
+const DescriptionLinkWrapper = styled.div<{ oneliner?: boolean }>`
   margin: 20px 0;
   font-size: 14px;
   
@@ -41,7 +41,14 @@ const DescriptionLinkWrapper = styled.div`
   }
 `
 
-const DescriptionLink = ({ title, children, iconColor, oneliner }) => {
+
+interface DescriptionLinkProps {
+  title: string;
+  children: React.ReactNode;
+  iconColor: string;
+  oneliner?: boolean;
+}
+const DescriptionLink: React.FC<DescriptionLinkProps> = ({ title, children, iconColor, oneliner }) => {
   return (
     <DescriptionLinkWrapper oneliner={oneliner}>
       <div className="flex">

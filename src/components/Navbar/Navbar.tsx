@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import Menu from './NavItems'
+import Menu, { Item } from './NavItems'
 import ProductsComponent from '../DropDown/ProductsComponent';
 import DevelopersComponent from '../DropDown/DevelopersComponent';
 import CompanyComponent from '../DropDown/CompanyComponent';
 
-const navConfig = [
+
+
+const navConfig: { title: string, component: React.ReactNode }[] = [
   { title: 'Products', component: <ProductsComponent /> },
   { title: 'Developers', component: <DevelopersComponent /> },
   { title: 'Company', component: <CompanyComponent /> },
@@ -42,10 +44,10 @@ const NavWrapper = styled.nav`
 
 
 const Navbar = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
-  const [previousIndex, setPreviousIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [previousIndex, setPreviousIndex] = useState<number | null>(null);
 
-  function handleActiveIndex(index) {
+  function handleActiveIndex(index: number) {
     setActiveIndex(index);
   }
 
@@ -64,7 +66,7 @@ const Navbar = () => {
       <Menu onMouseLeave={handleMouseLeave}>
         {navConfig.map((item, index) => {
           return (
-            <Menu.Item
+            <Item
               handleIndexLeave={handleIndexLeave}
               handleMouseEnter={() => handleActiveIndex(index)}
               direction={previousIndex - (activeIndex || 0)}
@@ -72,7 +74,7 @@ const Navbar = () => {
               title={item.title}
             >
               {(index === activeIndex) && item.component}
-            </Menu.Item>
+            </Item>
           )
         })}
       </Menu>

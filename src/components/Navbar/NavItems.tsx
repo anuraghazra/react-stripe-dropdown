@@ -21,8 +21,15 @@ const ItemTitle = styled.span`
   cursor: pointer;
 `
 
+interface ItemProps {
+  title: string;
+  children: any;
+  handleMouseEnter: () => void;
+  handleIndexLeave: () => void;
+  direction: number;
+}
 
-const Item = ({
+export const Item: React.FC<ItemProps> = ({
   title,
   children,
   handleMouseEnter,
@@ -68,7 +75,5 @@ const Item = ({
     </MenuItemWrapper>
   )
 }
-Menu.Item = Item;
-
 
 export default Menu;
