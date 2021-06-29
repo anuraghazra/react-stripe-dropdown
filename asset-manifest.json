@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/react-stripe-dropdown/static/js/main.91f4e544.chunk.js",
+    "main.js.map": "/react-stripe-dropdown/static/js/main.91f4e544.chunk.js.map",
+    "runtime-main.js": "/react-stripe-dropdown/static/js/runtime-main.5853b1d3.js",
+    "runtime-main.js.map": "/react-stripe-dropdown/static/js/runtime-main.5853b1d3.js.map",
+    "static/css/2.764ccc25.chunk.css": "/react-stripe-dropdown/static/css/2.764ccc25.chunk.css",
+    "static/js/2.0ac32d35.chunk.js": "/react-stripe-dropdown/static/js/2.0ac32d35.chunk.js",
+    "static/js/2.0ac32d35.chunk.js.map": "/react-stripe-dropdown/static/js/2.0ac32d35.chunk.js.map",
+    "index.html": "/react-stripe-dropdown/index.html",
+    "precache-manifest.56686bfc9d98410d99d9475943021c5c.js": "/react-stripe-dropdown/precache-manifest.56686bfc9d98410d99d9475943021c5c.js",
+    "service-worker.js": "/react-stripe-dropdown/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/react-stripe-dropdown/static/css/2.764ccc25.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5853b1d3.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.0ac32d35.chunk.js",
+    "static/js/main.91f4e544.chunk.js"
+  ]
+}
